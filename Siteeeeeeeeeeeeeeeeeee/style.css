@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #ffc401;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    position: relative;
+    font-size: 25px;
+    color:#181938;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+
+.navbar a {
+    font-size: 18px;
+    color: #986428;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #181938;
+
+}
+.home {
+    height: 100vh;
+    background: #ffffff; /*фон сайта*/
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items:center;
+    padding:0 10%;
+
+}
+.home-content {
+    max-width: 600px;
+}
+.test {
+    height: 100vh;
+    background: #fadb53; /*фон сайта*/
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items:center;
+    padding:0 10%;
+}
+.center{
+    margin: 0 auto;
+    width: 300px;
+    display: block;
+    border-radius: 10px;
+   }
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color:#fea004 ; /*developers */
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #181938; /*1 до*/
+    border: 2px solid #181938; /*обводка кнопок*/
+    border-radius: 8px;
+    font-size: 19px;
+    color: #ffffff; /*1 текст до*/
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.btn-box a:hover {
+    color:#181938; /*1 текст после*/
+}
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #181938; /*2 текст до*/
+
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #ffffff;/*2 текст после*/
+}
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0 ;
+    width: 0;
+    height: 100%;
+    background: #fadb53; /*1 кнопка после*/
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box a:nth-child(2)::before {
+    background: #181938;/*2 кнопка после*/
+}
+.btn-box a:hover::before {
+    width: 100%;
+
+}
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.home-sci a{
+    position: relative;
+    display:  inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ffc401;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #494844;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover {
+    color: #ffffff
+}
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ffc401;
+    z-index: -1;
+    transition: .5s;
+}
+.home-sci a:hover::before {
+    width: 100%;
+
+}
+    .text-blk {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
+  }
+  
+  .responsive-cell-block {
+    min-height: 75px;
+  }
+  
+  .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: space-evenly;
+  }
+  
+  .outer-container {
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    background-color: rgb(244, 252, 255);
+  }
+  
+  .inner-container {
+    max-width: 1320px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+  }
+  #images{
+    height: 400px;
+    width: 400px; 
+  }
+.boy{
+    left: 200px;
+}
+  

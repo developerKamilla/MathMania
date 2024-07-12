@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content= 
+"width=device-width, initial-scale=1.0"> 
+    <title> 
+        Math Sprint Game 
+    </title> 
+    <link rel="stylesheet" href="game.css"> 
+    <link rel="stylesheet" type="text/css" href="2 i just had a f.css"> 
+    <script type="text/javascript" src="game.js"></script> 
+    <style>
+        a { 
+         text-decoration: none; 
+        } 
+       </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Math Mania</a>
+
+        <nav class="navbar">
+
+            <a href='1.html'>home</a>
+            <a href='math1.html'>level</a>
+            <a href='gamee.html' class="active">games</a>
+            <a href='#'>account</a>
+            <a href='#'>contact</a>
+        </nav>
+
+    </header>
+ 
+<body> 
+    <div class="container"> 
+        <h1> 
+            Math Sprint Game 
+        </h1> 
+        <p id="problem"></p> 
+        <div class="options" id="options"></div> 
+        <p id="result"></p> 
+        <p class="score"> 
+            Score: 
+            <span id="currentScore">0</span> 
+        </p> 
+        <p id="timer"> 
+            Time: 
+            <span id="time">20</span> 
+            seconds 
+        </p> 
+        <button onclick="startGame()"> 
+            Start Game 
+        </button> 
+        <button onclick="resetGame()"> 
+            Reset Game 
+        </button> 
+        <p id="highScore"> 
+            High Score: 
+            <span id="highScoreValue">0</span> 
+        </p> 
+    </div> 
+ 
+    <script src="script.js"></script> 
+</body> 
+ 
+</html>
